@@ -53,4 +53,7 @@
             font-size: larger;
         }
     }
+    .result-container {
+        margin: 15px;
+    }
 }
