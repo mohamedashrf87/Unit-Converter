@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Unit Converter</title>
+        <link rel="stylesheet" href="static/styles.css">
+        {% block head %}
+        {% endblock %}
+    </head>
+    <body>
+
+        <h1 class="page-main-title">Unit Converter</h1>
+
+        <div class="main-tape">
+            <a href="/length" id="lengthA">Length</a>
+            <a href="/weight" id="WeightA">Weight</a>
+            <a href="/temperature" id="TemperatureA">Temperature</a>
+        </div>
+
+        {% block body %}
+        {% endblock %}
+    </body>
+</html>

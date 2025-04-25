@@ -2,7 +2,7 @@
 
 {% block head %}
     <style>
-        #lengthA {
+        #WeightA {
             color: rgb(25, 95, 160);
             text-decoration: underline;
         }
@@ -14,32 +14,34 @@
     {% if result %}
         <div class="result-container">
             <h3>Result of your calculation</h3>
-            <p>{{ length }}{{ unit_convert_from }} = {{ result }}{{ unit_convert_to }}</p>
+            <p>{{ weight }}{{ unit_convert_from }} = {{ result }}{{ unit_convert_to }}</p>
         </div>
     {% else %}
-        <form action="/length" method="post" class="convert-form">
+        <form action="/weight" method="post" class="convert-form">
 
             <div class="input-container">
-                <input class="inputs" type="number" name="length" id="LengthInput">
-                <label for="LengthInput">Enter The length to convert</label>
+                <input class="inputs" type="number" name="weight" id="weightInput">
+                <label for="weightInput">Enter The length to convert</label>
             </div>
 
             <div class="input-container">
                 <select class="inputs" name="unit_convert_from">
-                    <option value="mm">Millimeter (mm)</option>
-                    <option value="cm">Centimeter (cm)</option>
-                    <option value="m">Meter (m)</option>
-                    <option value="km">Kilometer (km)</option>
+                    <option value="g">Gram (g)</option>
+                    <option value="kg">Kilogram (kg)</option>
+                    <option value="mg">Milligram (mg)</option>
+                    <option value="lb">Pound (lb)</option>
+                    <option value="oz">Ounce (oz)</option>
                 </select>
                 <label for="unitConvertFrom">Unit convert from</label>
             </div>
 
             <div class="input-container">
                 <select class="inputs" name="unit_convert_to" id="unitConvertTo">
-                    <option value="mm">Millimeter (mm)</option>
-                    <option value="cm">Centimeter (cm)</option>
-                    <option value="m">Meter (m)</option>
-                    <option value="km">Kilometer (km)</option>
+                    <option value="g">Gram (g)</option>
+                    <option value="kg">Kilogram (kg)</option>
+                    <option value="mg">Milligram (mg)</option>
+                    <option value="lb">Pound (lb)</option>
+                    <option value="oz">Ounce (oz)</option>
                 </select>
                 <label for="unitConvertTo">Unit convert to</label>
             </div>
@@ -48,6 +50,5 @@
 
         </form>
     {% endif %}
-
 
 {% endblock %}
