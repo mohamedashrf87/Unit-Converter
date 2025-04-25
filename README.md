@@ -44,7 +44,7 @@ Follow the steps below to get the application up and running on your local machi
 1. **Clone the repository**:
 
    ```bash
-   git clone <repository-url>
+   git clone <https://github.com/mohamedashrf87/Unit-Converter>
    ```
 
 2. **Navigate to the project directory**:
